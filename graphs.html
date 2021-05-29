@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="nav-placeholder">
+
+    </div>
+    
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+
+    <div class="graph">
+        <div class="vehicle">
+            <div class="row">
+                <div class="column1">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;"  src="https://thingspeak.com/channels/1129763/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+                </div>
+                <div class="column1">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1129763/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+                </div>
+                <div class="column1">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1129763/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+
+
+                </div>
+            </div>
+
+            <div class="row1">
+                <div class="column1">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1129763/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=step"></iframe>
+
+                </div>
+                <div class="column1">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1129763/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+                </div>
+                <div class="column1">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1129763/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=step"></iframe>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+             <a href="https://api.thingspeak.com/channels/1129763/feeds.csv" class="btn">Download Complete Data</a>
+        </div>
+
+
+        
+    </div>
+</body>
+</html>

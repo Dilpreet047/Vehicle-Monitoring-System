@@ -17,7 +17,7 @@ loginButton.addEventListener("click", (e) =>
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user" && password === "web_dev") {
+    if (username === "CAR0001" && password === "iot_project") {
         window.location.replace("index.html");
     } else {
         loginErrorMsg.style.opacity = 1;

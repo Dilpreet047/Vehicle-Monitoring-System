@@ -9,7 +9,7 @@ while True:
     pressure = random.uniform(0 ,60)
     temperature = random.randrange(25, 90)
     smoke = random.uniform(100, 900)
-    Oil = random.uniform(-1, 1)
+    Oil = random.uniform(0, 50)
     poll = 0
     emergency = 0
 
